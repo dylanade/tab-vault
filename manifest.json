@@ -9,6 +9,6 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "icons/icon800.png"
+    "default_icon": "icons/icon.png"
   }
 }
