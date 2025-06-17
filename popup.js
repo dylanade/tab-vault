@@ -1,7 +1,5 @@
 document.getElementById('save').addEventListener('click', () => {
-    chrome.runtime.sendMessage({ action: "saveTabs" }, (response) => {
-      alert("Tabs saved!");
-    });
+    chrome.runtime.sendMessage({ action: "saveTabs" });
   });
   
   document.getElementById('restore').addEventListener('click', () => {
@@ -11,4 +9,3 @@ document.getElementById('save').addEventListener('click', () => {
       }
     });
   });
-  
