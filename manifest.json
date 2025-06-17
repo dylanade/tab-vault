@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Tab Vault",
   "version": "1.0",
-  "description": "Saves and restores all tabs on Chrome restart.",
+  "description": "Saves and restores all tabs on Chrome.",
   "permissions": ["tabs", "storage", "sessions"],
   "background": {
     "service_worker": "background.js"
