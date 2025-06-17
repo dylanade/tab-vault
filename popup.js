@@ -1,5 +1,7 @@
 document.getElementById('save').addEventListener('click', () => {
-    chrome.runtime.sendMessage({ action: "saveTabs" });
+    chrome.runtime.sendMessage({ action: "saveTabs" }, (response) => {
+      alert("Session saved!");
+    });
   });
   
   document.getElementById('restore').addEventListener('click', () => {
