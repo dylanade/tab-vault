@@ -47,16 +47,34 @@
     button:active {
       background-color: #3e9141;
     }
+
+    .footer {
+      margin-top: 20px;
+    }
+
+    .footer a img {
+      width: 16px;
+      height: 16px;
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+    }
+
+    .footer a img:hover {
+      opacity: 1;
+    }
+
   </style>
 </head>
 <body>
   <h1>Tab Vault</h1>
   <button id="save">Save Tabs</button>
   <button id="restore">Restore Tabs</button>
-  <div class="footer">
+  <div>
+    <div class="footer">
     <a href="https://github.com/dylanade" target="_blank" title="GitHub">
-      <img src="github_icon.png" alt="GitHub" />
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
     </a>
+  </div>
   </div>
   <script src="popup.js"></script>
 </body>
