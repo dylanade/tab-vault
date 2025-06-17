@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Session Saver</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tab Vault</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 250px;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #f4f4f4;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    button {
+      width: 80%;
+      padding: 10px;
+      margin: 5px 0;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    button:active {
+      background-color: #3e9141;
+    }
+  </style>
 </head>
 <body>
-  <h1>Session Saver</h1>
-  <button id="save">Save Tabs</button>
-  <button id="restore">Restore Tabs</button>
+  <h1>Tab Vault</h1>
+  <button id="save">💾 Save Tabs</button>
+  <button id="restore">♻️ Restore Tabs</button>
   <script src="popup.js"></script>
 </body>
 </html>
